@@ -139,7 +139,7 @@ Ejecutamos la herramienta de escaneo en [modo offline](https://semgrep.dev/docs/
 docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --config=auto
 ```
 
-**¿Qué vulnerabilidades ha encontrado? ¿Más o menos que en SonarQube?**
+**¿Qué vulnerabilidades has encontrado? ¿Más o menos que en SonarQube?**
 
 
 # Limpieza
