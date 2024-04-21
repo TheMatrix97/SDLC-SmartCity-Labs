@@ -5,3 +5,4 @@ This workshop is based on the work found in (https://github.com/TheMatrix97/AST_
 ## Index
 
 - [SAST Lab 1](./Lab1_SAST/README.md)
+- [DAST Lab 2](./Lab2_DAST_ZAP/README.md)

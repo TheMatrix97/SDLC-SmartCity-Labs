@@ -144,7 +144,7 @@ docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --config=auto
 
 # Limpieza
 
-Limpia los recursos levantados en el lab:
+Limpia los recursos desplegados en este workshop:
 
 - Sonarqube
 
