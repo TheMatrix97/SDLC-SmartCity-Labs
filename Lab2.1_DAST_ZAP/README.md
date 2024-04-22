@@ -39,7 +39,7 @@ cd BikeLaneViewer_AST
 docker build -t bikelanemap:latest .
 ```
 
-Crearemos y ejecutaremos un contenedor basado en la imagen que hemos generado anteriormente, mapeando la aplicación al puerto 4000.
+Crearemos y ejecutaremos un contenedor basado en la imagen que hemos generado anteriormente, mapeando la aplicación al puerto 3000.
 
 ```bash
 docker run -d --name bikelanemap -p 3000:3000 bikelanemap:latest
