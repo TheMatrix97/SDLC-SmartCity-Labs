@@ -35,9 +35,9 @@ docker pull aquasec/trivy:0.50.2
 
 ## BikeLaneMap
 
-En esta práctica, utilizaremos el proyecto [`BikelaneMap`](https://github.com/TheMatrix97/BikeLaneViewer_AST), que hemos visto en los anteriores laboratorios. Se trata de una aplicación web escrita en `NodeJS` utilizando el framework [`Express`](https://www.npmjs.com/package/express). Puedes 
+En esta práctica, utilizaremos el proyecto [`BikelaneMap`](https://github.com/TheMatrix97/BikeLaneViewer_AST), que hemos visto en los anteriores laboratorios. Se trata de una aplicación web escrita en `NodeJS` utilizando el framework [`Express`](https://www.npmjs.com/package/express). 
 
-- clona el proyecto en local, si no lo has hecho ya
+- Puedes clonar el proyecto en local, si no lo has hecho ya
 
 ```bash
 git clone https://github.com/TheMatrix97/BikeLaneViewer_AST.git
