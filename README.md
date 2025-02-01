@@ -1,4 +1,4 @@
-# Workshops para el curso *S-SDLC SmartCities*
+# Workshops *S-SDLC SmartCities*
 
 ## Índice
 - Threat Modeling
