@@ -1,9 +1,6 @@
-# AST Workshops for the SmartCities Case
+# Workshops para el curso *S-SDLC SmartCities*
 
-This workshop is based on the work found in (https://github.com/TheMatrix97/AST_Lab). It has been adapted to a Smart City software development oriented use case
-
-## Index
-
+## Índice
 - Threat Modeling
     - [Microsoft Threat Modeling Tool](./1_ThreatModeling/1.1_Microsoft/README.md)
 - Application Security Testing (AST)
