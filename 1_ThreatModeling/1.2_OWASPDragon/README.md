@@ -147,3 +147,11 @@ A continuación se muestra una propuesta. Por una parte el cliente deberá acced
 Encontrarás una propuesta de solución en el fichero [SmartChargerAppProposal.json](./extra/SmartChargerAppProposal.json)
 
 </details>
+
+### Limpieza
+
+- No os olvidéis de eliminar el contenedor Docker
+
+```bash
+docker rm -f threat-dragon
+```
