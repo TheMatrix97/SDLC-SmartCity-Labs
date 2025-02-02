@@ -90,6 +90,7 @@ A continuación se muestra una propuesta. Por una parte el cliente deberá acced
 
 ![alt text](./figures/optional_proposal.png)
 
-Revisa la rama `solution` para obtener el fichero .tm7 del modelo propuesto como solución.
+Encontrarás una propuesta de solución en el fichero [solution_with_oauth.tm7](./extra/solution_with_oauth.tm7)
+
 
 </details>
