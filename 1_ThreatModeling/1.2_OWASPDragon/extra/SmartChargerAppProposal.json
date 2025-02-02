@@ -1,0 +1,1406 @@
+{
+  "version": "2.3.0",
+  "summary": {
+    "title": "SmartChargerApp",
+    "owner": "Marc",
+    "description": "asd",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.3.0",
+        "cells": [
+          {
+            "position": {
+              "x": 680,
+              "y": 167.66666666666669
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "WebApp"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d2f7fe98-c20c-41b5-a01e-c3bd855bc3ed"
+                },
+                {
+                  "group": "right",
+                  "id": "5021cdc5-99e1-4950-991e-7dd3c7b271ea"
+                },
+                {
+                  "group": "bottom",
+                  "id": "eee9b16b-3108-4169-86f0-1b4121711b09"
+                },
+                {
+                  "group": "left",
+                  "id": "129103a8-f68c-4380-a89a-edb091745fc5"
+                }
+              ]
+            },
+            "id": "4bbc0447-762b-492c-bc63-dd4d48efa3bc",
+            "data": {
+              "type": "tm.Process",
+              "name": "WebApp",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "31ab43b7-04de-4728-a71a-6b8601f23106",
+                  "title": "Expedition",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "7136c578-d779-4e87-8408-f8b695afe0c7",
+                  "title": "Vulnerability scanning",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #14:\nSystematic enumeration and examination in order to find weaknesses and points where a security vulnerability might exist",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "8fe1f33e-ec10-401e-87fa-4fb5bed73e17",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "See OWASP Automated Threat #15:\nUsage may resemble legitimate application usage but leads to exhaustion of resources",
+                  "mitigation": "Mitigation or prevention such as providing backoff, resource management and avoiding forced deadlock",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "99d6fafa-ca02-469c-aecc-b9101de63bbe",
+                  "title": "Footprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #18:\nInformation gathering with the objective of learning as much as possible about the composition, configuration and security mechanisms of the application",
+                  "mitigation": "Defences include shutting down unnecessary services/ports and excluding information that could identify and compromise security of the organisation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 77,
+              "y": 175.33333333333337
+            },
+            "size": {
+              "width": 140,
+              "height": 74.66666666666666
+            },
+            "attrs": {
+              "text": {
+                "text": "Clientes"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9eb4522f-8551-4df2-91bb-d784dea7cd76"
+                },
+                {
+                  "group": "right",
+                  "id": "c56915ea-fbc4-4f87-ae86-c4bdc4cf5974"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c215f8cf-9eb9-438a-8946-9e9d832e82e7"
+                },
+                {
+                  "group": "left",
+                  "id": "98e134c3-c6c5-4248-bec2-5f392a5c99a9"
+                }
+              ]
+            },
+            "id": "f1dd2121-aec7-4963-8877-51b18598fa06",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Clientes",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "3ef6fa3a-0f08-41a1-8a32-5a8e587a1358",
+            "source": {
+              "x": 330,
+              "y": 70
+            },
+            "target": {
+              "x": 330,
+              "y": 330
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ecf94eaa-c855-44d6-94a3-b01e621fcd68",
+                  "title": "Use encryption",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Unencrypted data sent over a public network may be intercepted and read by an attacker",
+                  "mitigation": "Data should be encrypted either at the message or transport level",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "54873ab5-69e7-4c30-9cee-cf70f20ed143",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "9b3fb759-7257-4bf8-8638-4b47ebdf5a63",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 4,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs Response"
+            ],
+            "id": "6113408d-f588-406c-b806-1b39784ab8ca",
+            "source": {
+              "x": 670,
+              "y": 230
+            },
+            "target": {
+              "cell": "f1dd2121-aec7-4963-8877-51b18598fa06"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTP",
+              "threats": [
+                {
+                  "id": "acbc27e0-e804-4bbc-bb66-25d782828409",
+                  "title": "Use encryption",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Unencrypted data sent over a public network may be intercepted and read by an attacker",
+                  "mitigation": "Data should be encrypted either at the message or transport level",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "10480628-cb9b-4113-af45-02d4dff9a2ed",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "f99bc32e-6910-4fa2-b6d5-7ad6f06e0bf0",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 5,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs Request"
+            ],
+            "id": "a7b9b6b0-f02b-4f0d-a0a7-a93e19b5fc0f",
+            "source": {
+              "cell": "f1dd2121-aec7-4963-8877-51b18598fa06"
+            },
+            "target": {
+              "cell": "4bbc0447-762b-492c-bc63-dd4d48efa3bc",
+              "port": "129103a8-f68c-4380-a89a-edb091745fc5"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DB Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "TLS",
+              "threats": [
+                {
+                  "id": "6906d4b8-7183-4a1a-ad4c-ce5ab1d090ae",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "DB Request"
+            ],
+            "id": "93356a07-4fd7-4025-8cdc-9adf83131412",
+            "source": {
+              "cell": "4bbc0447-762b-492c-bc63-dd4d48efa3bc"
+            },
+            "target": {
+              "cell": "a0fe3cb0-d25b-40b3-bf37-f6b30b7bef7a"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DB Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "TLS",
+              "threats": [
+                {
+                  "id": "9b58097b-c860-48d6-ad02-c57a1bd6308e",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "DB Response"
+            ],
+            "id": "c2450a1a-35f3-41cd-9170-221b49e12993",
+            "source": {
+              "cell": "a0fe3cb0-d25b-40b3-bf37-f6b30b7bef7a"
+            },
+            "target": {
+              "cell": "4bbc0447-762b-492c-bc63-dd4d48efa3bc"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "9b7a7b95-8a8b-4981-8c35-b688dc315a71",
+            "source": {
+              "x": 590,
+              "y": 80
+            },
+            "target": {
+              "x": 860,
+              "y": 70
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 40
+              },
+              {
+                "x": 810,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs OAuth",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPs",
+              "threats": [
+                {
+                  "id": "c9ca2f16-be3a-47df-afcd-dae7e2e981aa",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "ce9500c2-224e-4988-8505-1e7471a23375",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs OAuth"
+            ],
+            "id": "a66c6870-609d-4f7c-b2e6-f937cf76fbd9",
+            "source": {
+              "cell": "5b7c8f55-27da-4423-88f9-a3650bbe633e"
+            },
+            "target": {
+              "cell": "4bbc0447-762b-492c-bc63-dd4d48efa3bc"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs OAuth",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "702dd4df-955d-415a-a7be-9315951bf7fb",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "af26f28e-4e28-4150-9d54-93cc3a2ba24f",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs OAuth"
+            ],
+            "id": "0895424b-2437-4744-bb54-b657f1fae783",
+            "source": {
+              "cell": "4bbc0447-762b-492c-bc63-dd4d48efa3bc"
+            },
+            "target": {
+              "cell": "5b7c8f55-27da-4423-88f9-a3650bbe633e"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs OAuth",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPs",
+              "threats": [
+                {
+                  "id": "f0c6fdc6-e7ed-4f49-8fa5-b9b7e02af612",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                },
+                {
+                  "id": "6b8d6d1b-1ae1-4c49-9497-2b04d269b075",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs OAuth"
+            ],
+            "id": "20f05a1e-6167-4f4b-bd03-b42029f79b2b",
+            "source": {
+              "cell": "5b7c8f55-27da-4423-88f9-a3650bbe633e"
+            },
+            "target": {
+              "cell": "f1dd2121-aec7-4963-8877-51b18598fa06"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 10
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPs OAuth",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPs",
+              "threats": [
+                {
+                  "id": "a049f9f6-7690-4554-9772-cb399a1670d9",
+                  "title": "Vulnerable transport protocol",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "24734f09-6031-47f7-824f-68fac2e98bf7",
+                  "title": "Fingerprinting",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPs OAuth"
+            ],
+            "id": "d992785a-34be-4faf-a77e-a33886720868",
+            "source": {
+              "cell": "f1dd2121-aec7-4963-8877-51b18598fa06"
+            },
+            "target": {
+              "cell": "5b7c8f55-27da-4423-88f9-a3650bbe633e"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": -49
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1008,
+              "y": 175.16666666666669
+            },
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "SQL DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f425f8bf-72e2-4ed9-adc1-097f79830eed"
+                },
+                {
+                  "group": "right",
+                  "id": "c023c448-7079-4211-bad8-1c72bc0517a9"
+                },
+                {
+                  "group": "bottom",
+                  "id": "26779619-0304-44e2-9112-f482f6020067"
+                },
+                {
+                  "group": "left",
+                  "id": "32f6d4c6-217f-482c-a0ae-379e21caa155"
+                }
+              ]
+            },
+            "id": "a0fe3cb0-d25b-40b3-bf37-f6b30b7bef7a",
+            "data": {
+              "type": "tm.Store",
+              "name": "SQL DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": true,
+              "storesInventory": true,
+              "threats": [
+                {
+                  "id": "66ca8c19-4af4-47ed-bb9c-d82fe2e0dd3d",
+                  "title": "Scraping",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #11:\nCollecting accessible data and/or processed output from the application",
+                  "mitigation": "Detect fake or compromised accounts, ensure information is accessible only with authentication and authorisation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "ecca5f12-dcdd-40df-9553-2d2fdf63d8d2",
+                  "title": "Skewing",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "See OWASP Automated Threat #16:\nAutomated repeated clicking or requesting or submitting content, affecting application based metrics such as counts, and measures of frequency and/or rate",
+                  "mitigation": "Defences include control of interaction frequency or proper enforcement of a single unique action",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "c64ab726-6ab4-4c79-9749-7aa947e9e093",
+                  "title": "Spamming",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "See OWASP Automated Threat #17:\nStoring malicious such as malware, Iframe distribution, photographs & videos, advertisements, referrer spam and tracking/surveillance code",
+                  "mitigation": "Defences include detecting embedded malicious code, controling interaction frequency and enforcement of a single unique action",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "e67f4706-0acf-42e1-b80e-a764b87ac195",
+                  "title": "Credential cracking",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "See OWASP Automated Threat #7:\nBrute force, dictionary and guessing attacks used against authentication processes of the application to identify valid account credentials",
+                  "mitigation": "Defences include restriction of excessive authentication attempts, control of interaction frequency and enforcement of a single unique action\n- Add rate limit login form\n- Implement Strong Password policy",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "c14e3093-267d-4917-b550-a1a24a44f58b",
+                  "title": "Account creation",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "See OWASP Automated Threat #19:\nBulk account creation, and sometimes profile population, by using the application’s account signup processes",
+                  "mitigation": "Defences include control of interaction frequency, enforcement of a single unique a action and enforcement of behavioral workflow",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "ad540a64-f69a-44a2-a60d-fc23039b960c",
+                  "title": "Account aggregation",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Spoofing",
+                  "description": "See OWASP Automated Threat #20:\nCompilation of credentials and information from multiple application accounts into another system",
+                  "mitigation": "Defences include control of interaction frequency and prevention of abuse of functionality",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "bab6d5b9-5907-4996-b2ca-d7fcea59659a",
+                  "title": "Coupon cracking",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "See OWASP Automated Threat #2:\nMass enumeration (for example coupon numbers, voucher codes, discount tokens) providing some form of user benefit within the application",
+                  "mitigation": "Defences include providing anti-automation, guarding against brute force, and preventing abuse of functionality",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "93210074-6ccb-417a-8132-f90bfce64867",
+                  "title": "Scalping",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "See OWASP Automated Threat #5:\nMass acquisition of goods or services using the application in a manner that a normal user would be unable to undertake manually",
+                  "mitigation": "Defences against this automated threat include control of interaction frequency, enforcement of a single unique a action and enforcement of behavioral workflow",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "564562ee-3ccf-49fb-a4e1-5e12133e8953",
+                  "title": "Vulnerable encryption algorithms",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Out of date encryption algorithms are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography for all signatures and encryption",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 5,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 650,
+              "y": -88.99999999999983
+            },
+            "size": {
+              "width": 150,
+              "height": 79.99999999999999
+            },
+            "attrs": {
+              "text": {
+                "text": "Google OAuth Provider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d22a715e-8260-42aa-9e57-36f5af38fb25"
+                },
+                {
+                  "group": "right",
+                  "id": "98d04a1c-3fb9-469c-952b-90dac6569f99"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b0588534-1325-4b56-a97d-afb7d6f5373c"
+                },
+                {
+                  "group": "left",
+                  "id": "89c3aa07-781b-48be-bd39-4acc8a91b7a6"
+                }
+              ]
+            },
+            "id": "5b7c8f55-27da-4423-88f9-a3650bbe633e",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Google OAuth Provider",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Marc",
+    "threatTop": 30
+  }
+}
