@@ -28,8 +28,9 @@ git clone https://github.com/<Usuario>/BikeLaneViewer_AST
 ```bash
 docker network create -d bridge sonar_network
 docker volume create sonar_data
-docker run -d --name sonarqube -p 9000:9000 -v sonar_data:/opt/sonarqube/data --network sonar_network sonarqube:10.4-community
+docker run -d --name sonarqube -p 9000:9000 -v sonar_data:/opt/sonarqube/data --network sonar_network sonarqube:10.7-community
 ```
+> Actualmente hay una versión nueva: `sonarqube:25.2.0.102705-community`, que introduce algunos cambios
 
 A continuación, abriremos un navegador y accederemos a `http://localhost:9000`. Donde deberíamos ver la pantalla de inicio de sesión de SonarQube
 
@@ -92,7 +93,7 @@ docker run --rm \
     -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=$KEY" \
     -e SONAR_TOKEN="$TOKEN" \
     -v "${PWD}:/usr/src" --network sonar_network \
-    sonarsource/sonar-scanner-cli
+    sonarsource/sonar-scanner-cli:11.2
 ```
 
 Si todo ha ido bien, deberíamos ver el siguiente output:
