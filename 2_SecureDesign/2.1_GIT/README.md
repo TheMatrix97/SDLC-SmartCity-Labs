@@ -30,7 +30,7 @@ El workshop se puede hacer utilizando la interfaz gráfica de GitHub o por líne
 <details>
 <summary>Hint</summary>
 
-Encontrarás una propuesta de solución en el fichero [solution_ofuscated.md](./extra/solution_ofuscated.md). Utilizado como último recurso ;)
+Encontrarás una propuesta de solución en el fichero [solution_ofuscated.md](./extra/solution_ofuscated.md). Utilízalo como último recurso ;)
 
 ```bash
 cat extra/solution_ofuscated.md | base64 -d > extra/solution.md
