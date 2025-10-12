@@ -13,9 +13,9 @@ El workshop se puede hacer utilizando la interfaz gráfica de GitHub o por líne
 
 ## Requisitos
 
-- Tener instalado [Git](https://git-scm.com) en tu sistema [Opcional].
+- Tener instalado [Git](https://git-scm.com) en tu sistema.
 - Conocimientos básicos de Git (clonar, hacer commits, trabajar con ramas, etc.).
-- Acceso a una terminal o consola de comandos [Opcional]
+- Acceso a una terminal o consola de comandos.
 
 
 1. **Clona el repositorio**
