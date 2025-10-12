@@ -36,13 +36,16 @@ EOF
 1- Desplegamos el Contenedor Docker, i exponemos la aplicación en el puerto `8080`
 
 ```bash
-docker run -d --name threat-dragon -p 8080:3000 -v $(pwd)/.env:/app/.env ghcr.io/thematrix97/threat-dragon:v2.3.0
+docker run -d --name threat-dragon -p 8080:3000 -v $(pwd)/.env:/app/.env owasp/threat-dragon:v2.5.0
 ```
-> Podéis revisar que la aplicación está en marcha con el comando `docker ps`
+> Podéis revisar que la aplicación se ha iniciado correctamente con el comando `docker ps`
+
+> Nota: Si vuestro equipo dispone de una CPU ARM64 tendréis que utilizar la imagen `owasp/threat-dragon:v2.5.0-arm64`
 
 2- Accederemos a la herramienta utilizando nuestro navegador Web favorito `http://localhost:8080`.
 
 ![alt text](./figures/front_page_dragon.png)
+
 
 > Para esta demo haremos login con una sesión en local (`Login to Local Session`).
 
