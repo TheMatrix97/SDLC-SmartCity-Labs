@@ -136,6 +136,10 @@ En nuestro caso, marcaremos la amenaza `Credential Cracking` como mitigada, ya q
 
 > Selecciona todas las opciones para la generación del informe
 
+### Entrega
+
+- Incluye el modelo JSON y el informe completo en formato PDF
+
 ### Opcional
 
 16- Queremos que nuestra aplicación permita a los usuarios hacer login con Google vía OAuth2.0 utilizando el flujo `Authorization Code Grant` y acceder a su información en la nube. Buscar información sobre este flujo e introduce los cambios necesarios en el modelo para incluir esta funcionalidad

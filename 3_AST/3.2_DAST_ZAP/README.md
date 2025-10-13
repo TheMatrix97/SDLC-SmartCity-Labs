@@ -205,3 +205,6 @@ docker run -d --name bikelanemap -p 3000:3000 bikelanemap:latest
 ```bash
 docker run --rm -t ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py -t http://host.docker.internal:3000/api/doc/swagger.json -f openapi
 ```
+
+## Entrega
+- Incluye el resultado de la ejecución final del scanner Zap (posterior a los cambios) 

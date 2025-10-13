@@ -140,8 +140,20 @@ Ejecutamos la herramienta de escaneo en [modo offline](https://semgrep.dev/docs/
 docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --config=auto
 ```
 
+* Ejecuta la herramienta con las opciones `--sarif --sarif-output=semgrep.sarif` y almacena la respuesta en un fichero `semgrep.sarif 
+
+    ```bash
+    docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --sarif --sarif-output=semgrep.sarif --config=auto > semgrep.sarif
+    ```
+
 **¿Qué vulnerabilidades has encontrado? ¿Más o menos que en SonarQube?**
 
+
+# Entrega
+
+- Incluye
+    - Un screenshot con el resultado resumido de SonarQube (Dashboard del proyecto)
+    - El fichero `semgrep.sarif`
 
 # Limpieza
 

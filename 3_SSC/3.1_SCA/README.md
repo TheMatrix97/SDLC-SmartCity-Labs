@@ -87,3 +87,8 @@ docker run --rm -v //var/run/docker.sock:/var/run/docker.sock -v trivy_cache:/ro
 
 
 **TODO:** Intenta solucionar todas las vulnerabilidades que has encontrado. *(No hace falta tocar el código fuente .js ni .html!!)*, solamente la configuración del proyecto
+
+## Entrega
+
+- Incluye el código con los cambios en un fichero comprimido .zip
+  - Para ahorrar espacio, no incluyas la carpeta node_modules

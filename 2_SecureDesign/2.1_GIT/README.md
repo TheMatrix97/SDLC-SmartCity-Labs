@@ -38,3 +38,6 @@ cat extra/solution_ofuscated.md | base64 -d > extra/solution.md
 
 
 </details>
+
+## Entrega
+- Explica cómo y que información comprometida has encontrado en el repositorio. Incluye esta información en un fichero README.md
