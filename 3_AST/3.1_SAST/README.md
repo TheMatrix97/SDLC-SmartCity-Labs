@@ -30,7 +30,7 @@ docker network create -d bridge sonar_network
 docker volume create sonar_data
 docker run -d --name sonarqube -p 9000:9000 -v sonar_data:/opt/sonarqube/data --network sonar_network sonarqube:10.7-community
 ```
-> Actualmente hay una versión nueva: `sonarqube:25.2.0.102705-community`, que introduce algunos cambios
+> Actualmente hay una versión nueva: `sonarqube:25.10.0.114319-community`, que introduce algunos cambios. Para el laboratorio utilizaremos la 10.7 por simplicidad
 
 A continuación, abriremos un navegador y accederemos a `http://localhost:9000`. Donde deberíamos ver la pantalla de inicio de sesión de SonarQube
 
@@ -112,7 +112,7 @@ INFO: Final Memory: 22M/80M
 INFO: ------------------------------------------------------------------------
 ```
 
-Como puedes ver en el dashboard, tenemos 5 `Security Hostspots` que deberíamos revisar para ver si pueden ser problemas de seguridad.
+Como puedes ver en el dashboard, tenemos 7 `Security Hostspots` que deberíamos revisar para ver si pueden ser problemas de seguridad.
 ¿Qué problemas tiene este código?
 
 ![Security review](./fig/security_review.png)
@@ -143,7 +143,7 @@ docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --config=auto
 * Ejecuta la herramienta con las opciones `--sarif --sarif-output=semgrep.sarif` y almacena la respuesta en un fichero `semgrep.sarif 
 
     ```bash
-    docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --sarif --sarif-output=semgrep.sarif --config=auto > semgrep.sarif
+    docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --sarif --config=auto > semgrep.sarif
     ```
 
 **¿Qué vulnerabilidades has encontrado? ¿Más o menos que en SonarQube?**
