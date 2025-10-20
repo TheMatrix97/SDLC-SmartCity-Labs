@@ -140,7 +140,7 @@ Ejecutamos la herramienta de escaneo en [modo offline](https://semgrep.dev/docs/
 docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --config=auto
 ```
 
-* Ejecuta la herramienta con las opciones `--sarif --sarif-output=semgrep.sarif` y almacena la respuesta en un fichero `semgrep.sarif 
+* Ejecuta la herramienta con las opciones `--sarif --sarif-output=semgrep.sarif` y almacena la respuesta en un fichero `semgrep.sarif`
 
     ```bash
     docker run --rm -v ${PWD}:/src returntocorp/semgrep semgrep scan --sarif --config=auto > semgrep.sarif
